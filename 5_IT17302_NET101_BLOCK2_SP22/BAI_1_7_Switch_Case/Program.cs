@@ -8,6 +8,7 @@ namespace BAI_1_7_Switch_Case
 {
     internal class Program
     {
+        
         /*
          * Switch Case câu lệnh rẽ nhành và thường được sử dụng làm menu trong lập trình.
          *
@@ -63,6 +64,7 @@ namespace BAI_1_7_Switch_Case
                         break;
                 }
             } while (!(input == "4"));//4=4true
+
         }
     }
 }

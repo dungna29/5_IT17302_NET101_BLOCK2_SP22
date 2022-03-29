@@ -83,6 +83,8 @@ namespace BAI_3_1_OOP
             //In 1 vài giá trị trong đối tượng
             Console.WriteLine(sv1.Ten);//In chỉ 1 mình tên ra màn hình
 
+            
+
         }
     }
 }

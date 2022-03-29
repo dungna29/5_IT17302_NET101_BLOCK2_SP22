@@ -8,5 +8,6 @@ namespace BAI_3_3_List
 {
     internal class SinhVien
     {
+        int a;
     }
 }

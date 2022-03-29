@@ -45,10 +45,30 @@ namespace BAI_3_4_Method
             // 3. Đủ tham số đầu vào không được thiếu
 
             //mtMethodVoid.tinhTong(1);Truyền thiếu tham số
-            mtMethodVoid.tinhTong(1,2);
-            mtMethodVoid.tinhTong(1,2,4);
+            mtMethodVoid.tinhTong(1, 2);
+            mtMethodVoid.tinhTong(1, 2, 4);
 
             //Lưu ý: Truyền số lượng tham số sẽ quyết định việc gọi vào phương thức nào trong nạp chồng.
+            #endregion
+
+            #region 2. Phương thức trả về
+            // Cách thức gọi rồi truyền tham số tương tự như void
+            Method_TraVe mt = new Method_TraVe();
+            int a = 5;
+            Console.WriteLine(a + 10);
+            mt.tinhTong(5, 6);//Phương thức trả về là 1 giá trị nó không thể tự in ra được.
+            Console.WriteLine(mt.tinhTong(5, 6)+100);
+
+            int[] arrTemp = mt.getYears1800_2022();
+            for (int i = 0; i < mt.getYears1800_2022().Length; i++)
+            {
+                Console.WriteLine(mt.getYears1800_2022()[i]);
+            }
+            //Ví dụ: Viết 1 phương thức trả về 1 tập tên người có sẵn sau đó gọi sang bên program in ra như ví dụ trên.
+            foreach (var x in mt.getLstNames())
+            {
+                Console.WriteLine(x);
+            }
             #endregion
         }
     }
