@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_3_4_Method", "BAI_3_4_M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_3_5_KeThua", "BAI_3_5_KeThua\BAI_3_5_KeThua.csproj", "{E887F891-1E6F-4CB9-A066-50E71EB314A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_3_6_BAI_MAU_CRUD_OBJ", "BAI_3_6_BAI_MAU_CRUD_OBJ\BAI_3_6_BAI_MAU_CRUD_OBJ.csproj", "{A1A3176B-D39C-4238-9B82-393B34DDE6D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{E887F891-1E6F-4CB9-A066-50E71EB314A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E887F891-1E6F-4CB9-A066-50E71EB314A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E887F891-1E6F-4CB9-A066-50E71EB314A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A3176B-D39C-4238-9B82-393B34DDE6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A3176B-D39C-4238-9B82-393B34DDE6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A3176B-D39C-4238-9B82-393B34DDE6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A3176B-D39C-4238-9B82-393B34DDE6D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
