@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace BAI_3_7_XuLyChuoi
@@ -87,6 +88,104 @@ namespace BAI_3_7_XuLyChuoi
             KyTuCanXoa: là 1 ký tự hoặc 1 mảng ký tự cần xóa
              */
             #endregion
+            viDu3();
+        }
+        //Ví dụ 1:
+        public static void viDu1()
+        {
+            List<string> lstName = new List<string>() {"ABCa","abc","dbc","uob","a12"};
+            //In ra các chuỗi bắt đầu với chữ a
+            foreach (var x in lstName)
+            {
+                if (x.StartsWith("a"))//StartsWith bắt đầu với ký tự
+                {
+                    Console.Write(x + " ");
+                }
+            }
+
+            Console.WriteLine();
+            foreach (var x in lstName)
+            {
+                if (x.Contains("a"))//Contains kiểm tra ký tự trong chuỗi
+                {
+                    Console.Write(x + " ");
+                }
+            }
+
+            Console.WriteLine();
+            foreach (var x in lstName)
+            {
+                if (x.ToLower().StartsWith("a".ToLower()))//ToLower viết thường chuỗi
+                {
+                    Console.Write(x + " ");
+                }
+            }
+        }
+        //Ví dụ 2: Biến đổi tên thành mã nguyen hoang tien = TieNHPH1234
+        public static void vidu2()
+        {
+            do
+            {
+                string name,nameVietHoa="";
+                Console.WriteLine("Mời bạn nhập tên: ");
+                name = Console.ReadLine();
+                //Đưa chuỗi về mảng
+                string[] arrNames = name.Split(' ');//NGUYEN HOANG TIEN đưa về mảng string
+                foreach (var x in arrNames)
+                {
+                    nameVietHoa += vietHoaChuCaiDau(x) + " ";//Viết hoa từng từ sau đó cộng zồn lên vào chuỗi
+                    //Nguyen + Hoang + Tien
+                }
+                //Thực hiện hành động tạo ra mã
+                Console.WriteLine($"Tên sau khi viết hoa chữ cái đầu: \n {nameVietHoa}");
+                Console.WriteLine($"Mã sinh viên: {zenMaFpoly(name,"2398765")}");
+
+            } while (true);
+
+        }
+        //Phương thức zen mã sinh viên FPOLY
+        public static string zenMaFpoly(string fullName,string number)//nguyen anh dung
+        {
+            string[] arrNames = fullName.Split(' ');
+            string msv = vietHoaChuCaiDau(arrNames[arrNames.Length - 1]);//= Dung
+            for (int i = 0; i < arrNames.Length-1; i++)
+            {
+                //arrNames[i][0] = N lấy chữ cái đầu của phần tử trong mảng
+                //msv += Char.ToUpper(arrNames[i][0]);
+                msv += vietHoaChuCaiDau(arrNames[i][0].ToString());
+            }
+
+            return msv + "PH" + number;//DungNAPHxxxxx
+        }
+
+        //Viết hoa chữ cái đầu của 1 từ
+        public static string vietHoaChuCaiDau(string text)//DUNG
+        {
+            var temp = text.ToLower();//dung
+            //temp.Substring(0,1).ToUpper() = D
+            return temp.Substring(0, 1).ToUpper() + temp.Substring(1, temp.Length-1);
+        }
+        //Ví dụ 3: Kiểm tra kiểu đầu vào và bắt nhập đúng thì thôi
+        public static void viDu3()
+        {
+            string input;
+            do
+            {
+                Console.Write("Mời bạn nhập số: ");
+                input = Console.ReadLine();
+            } while (!checkSo_Chu(input,1));
+
+            Console.WriteLine("Chúc mừng bạn đã nhập số nguyên");
+        }
+
+        //Phương thức check so, chu....
+        public static bool checkSo_Chu(string text,int a)//text là chuỗi cần check, a là kiểu cần check
+        {
+            if (a == 1)//Check số
+            {
+                return Regex.IsMatch(text, @"^\d+$");
+            }
+            return Regex.IsMatch(text, @"^[a-zA-Z]+$");
         }
     }
 }

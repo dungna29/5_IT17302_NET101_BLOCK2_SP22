@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_3_6_BAI_MAU_CRUD_OBJ", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_3_7_XuLyChuoi", "BAI_3_7_XuLyChuoi\BAI_3_7_XuLyChuoi.csproj", "{F2B19788-3837-4E35-81F1-B8863858DF31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_3_8_ThuatToanNoiBot_BubbleSort", "BAI_3_8_ThuatToanNoiBot_BubbleSort\BAI_3_8_ThuatToanNoiBot_BubbleSort.csproj", "{4C96AD72-255C-4730-8CA6-CF91177ADBE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{F2B19788-3837-4E35-81F1-B8863858DF31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2B19788-3837-4E35-81F1-B8863858DF31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2B19788-3837-4E35-81F1-B8863858DF31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C96AD72-255C-4730-8CA6-CF91177ADBE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C96AD72-255C-4730-8CA6-CF91177ADBE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C96AD72-255C-4730-8CA6-CF91177ADBE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C96AD72-255C-4730-8CA6-CF91177ADBE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
