@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A1A3176B-D39C-4238-9B82-393B34DDE6D9}</ProjectGuid>
+    <ProjectGuid>{DAC85817-DC0A-467A-823D-4E6196B9009B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BAI_3_6_BAI_MAU_CRUD_OBJ</RootNamespace>
-    <AssemblyName>BAI_3_6_BAI_MAU_CRUD_OBJ</AssemblyName>
+    <RootNamespace>BAI_4_0_AccessModifier</RootNamespace>
+    <AssemblyName>BAI_4_0_AccessModifier</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Nguoi.cs" />
-    <Compile Include="NguoiYeuMoi.cs" />
-    <Compile Include="NguoiYeuMoiService_NangCao.cs" />
-    <Compile Include="NguoiYeuMoiService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

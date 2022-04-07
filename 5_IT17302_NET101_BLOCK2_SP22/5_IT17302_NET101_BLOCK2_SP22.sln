@@ -45,6 +45,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_3_7_XuLyChuoi", "BAI_3_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_3_8_ThuatToanNoiBot_BubbleSort", "BAI_3_8_ThuatToanNoiBot_BubbleSort\BAI_3_8_ThuatToanNoiBot_BubbleSort.csproj", "{4C96AD72-255C-4730-8CA6-CF91177ADBE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_3_9_Abstract_Interface", "BAI_3_9_Abstract_Interface\BAI_3_9_Abstract_Interface.csproj", "{92F27FD9-C220-4EDE-9EEB-C9E0EBE9B394}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_4_0_AccessModifier", "BAI_4_0_AccessModifier\BAI_4_0_AccessModifier.csproj", "{DAC85817-DC0A-467A-823D-4E6196B9009B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +139,14 @@ Global
 		{4C96AD72-255C-4730-8CA6-CF91177ADBE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C96AD72-255C-4730-8CA6-CF91177ADBE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C96AD72-255C-4730-8CA6-CF91177ADBE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92F27FD9-C220-4EDE-9EEB-C9E0EBE9B394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F27FD9-C220-4EDE-9EEB-C9E0EBE9B394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F27FD9-C220-4EDE-9EEB-C9E0EBE9B394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F27FD9-C220-4EDE-9EEB-C9E0EBE9B394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAC85817-DC0A-467A-823D-4E6196B9009B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC85817-DC0A-467A-823D-4E6196B9009B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC85817-DC0A-467A-823D-4E6196B9009B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC85817-DC0A-467A-823D-4E6196B9009B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

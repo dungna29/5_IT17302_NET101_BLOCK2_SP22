@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A1A3176B-D39C-4238-9B82-393B34DDE6D9}</ProjectGuid>
+    <ProjectGuid>{92F27FD9-C220-4EDE-9EEB-C9E0EBE9B394}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BAI_3_6_BAI_MAU_CRUD_OBJ</RootNamespace>
-    <AssemblyName>BAI_3_6_BAI_MAU_CRUD_OBJ</AssemblyName>
+    <RootNamespace>BAI_3_9_Abstract_Interface</RootNamespace>
+    <AssemblyName>BAI_3_9_Abstract_Interface</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ISinhVienService.cs" />
     <Compile Include="Nguoi.cs" />
-    <Compile Include="NguoiYeuMoi.cs" />
-    <Compile Include="NguoiYeuMoiService_NangCao.cs" />
-    <Compile Include="NguoiYeuMoiService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinhVien.cs" />
+    <Compile Include="SinhVienService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
